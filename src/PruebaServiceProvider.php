@@ -2,6 +2,7 @@
 
 namespace Kumasagati\Prueba;
 
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\ServiceProvider;
 
 class PruebaServiceProvider extends ServiceProvider
@@ -28,6 +29,11 @@ class PruebaServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__ . '/views', 'kumasagati/prueba');
         $this->publishes([
             __DIR__ . '/views' => base_path('resources/views/kumasagati/prueba')
+        ]);
+        Artisan::call("migrate");
+        Artisan::call("clear-compiled");
+        Artisan::call("vendor:publish", [
+            '--provider' => 'Kumasagati\Prueba\PruebaServiceProvider'
         ]);
     }
 }
