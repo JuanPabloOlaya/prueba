@@ -7,7 +7,7 @@
   "require-dev": {},
   "autoload": {
     "psr-4": {
-      "Kumasagati\\Prueba\\": "src"
+      "Kumasagati\\Prueba\\": "./src"
     }
   },
   "extra": {
