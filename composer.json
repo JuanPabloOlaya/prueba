@@ -2,7 +2,7 @@
     "name": "kumasagati/prueba",
     "description": "This package was created as developer's trial",
     "require": {
-        "php": "^7.4"
+        "php": "^7.3"
     },
     "require-dev": {
     },
