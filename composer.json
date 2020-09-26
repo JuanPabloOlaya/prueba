@@ -1,23 +1,27 @@
 {
-    "name": "kumasagati/prueba",
-    "description": "This package was created as developer's trial",
-    "require": {
-        "php": "^7.3"
-    },
-    "require-dev": {
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Kumasagati\\Prueba\\PruebaServiceProvider"
-            ]
-        }
-    },
-    "authors": [
-        {
-            "name": "Juan Pablo",
-            "email": "juanpa-1920@hotmail.com"
-        }
-    ],
-    "minimum-stability": "dev"
+  "name": "kumasagati/prueba",
+  "description": "This package was created as developer's trial",
+  "require": {
+    "php": "^7.3"
+  },
+  "require-dev": {},
+  "autoload": {
+    "psr-4": {
+      "Kumasagati\\Prueba\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Kumasagati\\Prueba\\PruebaServiceProvider"
+      ]
+    }
+  },
+  "authors": [
+    {
+      "name": "Juan Pablo",
+      "email": "juanpa-1920@hotmail.com"
+    }
+  ],
+  "minimum-stability": "dev"
 }
