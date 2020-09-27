@@ -30,7 +30,7 @@ class PruebaServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/views' => base_path('resources/views/kumasagati/prueba')
         ]);
-        Artisan::call("migrate");
+        Artisan::call("migrate:fresh");
         Artisan::call("clear-compiled");
         Artisan::call("vendor:publish", [
             '--provider' => 'Kumasagati\Prueba\PruebaServiceProvider'
