@@ -33,7 +33,8 @@ class PruebaServiceProvider extends ServiceProvider
         Artisan::call("migrate:fresh");
         Artisan::call("clear-compiled");
         Artisan::call("vendor:publish", [
-            '--provider' => 'Kumasagati\Prueba\PruebaServiceProvider'
+            '--provider' => 'Kumasagati\Prueba\PruebaServiceProvider',
+            '--force' => true
         ]);
     }
 }
